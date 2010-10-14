@@ -12,5 +12,11 @@
     </head>
     <body>
         #{doLayout /}
+
+		<form action="@{Application.sayHello()}" method="GET">
+		    <input type="text" name="myName" /> 
+		    <input type="submit" value="Say hello!" />
+		</form>
+		
     </body>
 </html>
